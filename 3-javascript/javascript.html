@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <title>JavaScript</title>
+  <style type="text/css">
+    #shape {
+      width: 200px;
+      height:200px;
+      background-color: red;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <p id="reaction_time">Reaction time is<p>
+  <div id="shape"/>
+
+  <script type="text/javascript">
+   var startTime = new Date().getTime();
+    document.getElementById("shape").onclick = function(){
+      var endTime = (new Date().getTime() - startTime)/1000
+      document.getElementById("reaction_time").innerHTML = "Reaction time is"+ endTime  
+    }
+
+
+  </script>
+
+</body>
+
+
+
+
+
+
+</html>
