@@ -4,31 +4,32 @@
 <script src="jquery.min.js"></script>
 <style>
 
-#circle{
-  width: 200px;
-  height: 200px;
+  #circle{
+  width: 100px;
+  height: 100px;
   background-color: red;
   margin: 20px;
+  border-radius: 50%
 }
-.rectangle{
+#rectangle{
   width: 100px;
   height: 100px;
   margin: 20px;
-  border-radius: 20%;
   background-color: black;
-
 }
 </style>
 
 <body>
   <div id="circle"></div>
-  <div class="rectangle"></div>
-
-  </div>
+  <div id="rectangle"></div>
   <script type="text/javascript">
-    $("#circle").click(function(){
-      alert("Circle is clicked")
-    })
+    $("div").click(function() {
+          if ($(this).attr("id") == "circle") {
+            alert("This is an Cirlce")
+          } else {
+            alert("This is not an cirlce")
+          }
+        });
   </script>
 
 
