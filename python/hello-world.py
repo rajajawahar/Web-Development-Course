@@ -14,6 +14,31 @@ print list
 print tuples
 print dictionary
 
-print age
-print name
+for i in range(11):
+  print i
+print "rob"
+
+
+for item in list:
+ print item
+
+for item in dictionary:
+  print item 
+
+  if name == "Raja Mohamed":
+    print "True"
+  else:
+    print "False"
+
+
+
+def sayHello():
+ print "Hello World"    
+
+sayHello()
+  
+
+
+
+
 
