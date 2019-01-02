@@ -36,6 +36,18 @@ def sayHello():
  print "Hello World"    
 
 sayHello()
+
+def saySomething(something):
+ print something
+
+def twoParaminFunction(x,y):
+  print x + y 
+
+saySomething("Something I told")  
+twoParaminFunction(5,10)
+
+
+
   
 
 
